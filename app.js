@@ -28,5 +28,3 @@ app.post('/login', (req, res) => {
         res.send('Login failed');
     }
 });
-
-
