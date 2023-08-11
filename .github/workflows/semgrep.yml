@@ -33,3 +33,4 @@ jobs:
         env:
            # Add the rules that Semgrep uses by setting the SEMGREP_RULES environment variable. 
            SEMGREP_RULES: p/owasp-top-ten # more at semgrep.dev/explore
+           
