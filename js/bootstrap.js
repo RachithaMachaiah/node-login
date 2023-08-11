@@ -561,7 +561,7 @@ if (typeof jQuery === 'undefined') {
     if (this.options.toggle) this.toggle()
   }
 
-  Collapse.VERSION  = '3.3.6'
+  Collapse.VERSION  = '0.0.1'
 
   Collapse.TRANSITION_DURATION = 350
 
