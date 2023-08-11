@@ -23,7 +23,7 @@ app.post('/login', (req, res) => {
     // Add your authentication logic here
     // For simplicity, we'll just check if the username and password match a hardcoded value
     if (username === 'admin' && password === 'password') {
-        res.send('Login was successful');
+        res.send('Login was successful- test1');
     } else {
         res.send('Login failed');
     }
