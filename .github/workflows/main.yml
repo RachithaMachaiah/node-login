@@ -1,0 +1,20 @@
+name: Semgrep Analysis
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  semgrep:
+    name: Run Semgrep
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run Semgrep
+        uses: returntocorp/semgrep-action@v2
+        with:
+          config: semgrep.yml
