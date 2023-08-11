@@ -1,0 +1,14 @@
+name: Semgrep
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main, master
+jobs:
+  semgrep:
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: pip install semgrep==0.115.0
+      - run: semgrep --config=auto
