@@ -35,9 +35,9 @@ jobs:
       - name: Run ZAP Security Scan
         run: |
           ./ZAP_2.13.0/zap-cli.py --zap-url http://localhost -p 8090 status -t 120
-          ./ZAP_2.13.0/zap-cli.py --zap-url http://localhost -p 8090 open-url <TARGET_URL>
-          ./ZAP_2.13.0/zap-cli.py --zap-url http://localhost -p 8090 spider <TARGET_URL>
-          ./ZAP_2.13.0/zap-cli.py --zap-url http://localhost -p 8090 active-scan <TARGET_URL>
+          ./ZAP_2.13.0/zap-cli.py --zap-url http://localhost -p 8090 open-url https://github.com/RachithaMachaiah/node-login
+          ./ZAP_2.13.0/zap-cli.py --zap-url http://localhost -p 8090 spider https://github.com/RachithaMachaiah/node-login
+          ./ZAP_2.13.0/zap-cli.py --zap-url http://localhost -p 8090 active-scan https://github.com/RachithaMachaiah/node-login
 
       - name: Publish ZAP Report
         uses: actions/upload-artifact@v2
